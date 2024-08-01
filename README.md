@@ -1,4 +1,4 @@
-# Sales forecasting
+# AutoML for sales forecasting (time series and regression models)
 
 ## About this project
 This project shows how to use [Autogluon](https://auto.gluon.ai/stable/index.html) to build time series and regression models to make sales forecasts. The dataset that was used contains data for 5 different SKUs (`series_id`) and a separate model was built for the SKU's in the dataset to forecast `day_sales_usd`. For the purpose of demonstration we will build and deploy the models for the `Narnia_OptiGlimpse` and `Narnia_LensLogic` SKUs in the dataset.
