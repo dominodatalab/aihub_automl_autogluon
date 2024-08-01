@@ -1,5 +1,4 @@
 RUN pip install --user autogluon==1.1.1 \
-	lightgbm==4.3.0 \
 	matplotlib==3.7.1 \
 	numpy==1.26.4 \
 	pandas==2.2.2 \

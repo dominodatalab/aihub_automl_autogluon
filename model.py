@@ -77,7 +77,7 @@ train_dfs = {}
 
 for name, path in MODELS.items():
     predictors[name] = load_model(path)
-    # Load the unsplit training data file
+    # Load the unsplit training data file; this is for computing derived features that look back in time
     train_df_path = glob.glob(f"/mnt/code/data/feature_engineering/{name}_processed_features.csv")[0]
     train_dfs[name] = pd.read_csv(train_df_path)
     train_dfs[name]['revenue_recognition_date'] = pd.to_datetime(train_dfs[name]['revenue_recognition_date'])
@@ -169,7 +169,7 @@ if __name__ == "__main__":
     parser.add_argument("--series_id", type=str, help="Series ID to use as the model name (optional)")
     parser.add_argument("--path", type=str, help="Path to the input CSV file")
     parser.add_argument("--output_dir", type=str, default="/mnt/data/forecasts/",
-                        help="Directory to write output files (default: /mnt/data/forecasts/)")
+                        help="Directory to write output files (default: /mnt/data/forecasts/)") # make sure the code has access to /mnt/data/
     args = parser.parse_args()
 
     if args.is_job:
@@ -211,7 +211,7 @@ if __name__ == "__main__":
         write_predictions_to_file(multiple_predictions, args.output_dir, "interactive_multiple")
 
         # Specific model example
-        print("\nPredicting with a specific model (Atlantis_IrisInnovations):")
+        print("\nPredicting with a specific model (Narnia_OptiGlimpse):")
         specific_predictions = predict_with_models(single_row_input, model_name="Narnia_OptiGlimpse")
         write_predictions_to_file(specific_predictions, args.output_dir, "Narnia_OptiGlimpse")
 

@@ -46,6 +46,20 @@ The assets available in this project are:
 
 *model.py* - This file contains code to deploy the built models as a model API. It can also be used to call a job. The `predict_with_models` functions it the function that gets called from the model API and the arguments specified in `parser` in the `if __name__ == "__main__":` predicate are used to run the job. Note, in order to run this as a job the `--is_job` must be specified as a CLI argument 
 
+## License
+This template is licensed under Apache 2.0 and contains the following components: 
+* autogluon [Apache License 2.0](https://github.com/autogluon/autogluon/blob/master/LICENSE)
+* matplotlib [Matplotlib License ](https://github.com/matplotlib/matplotlib/blob/main/LICENSE/LICENSE)
+* numpy [NumPy License](https://numpy.org/doc/stable/license.html)
+* pandas [BSD-3 Clause "New"](https://github.com/pandas-dev/pandas/blob/main/LICENSE)
+* python-dotenv [BSD-3 Clause "New"](https://github.com/theskumar/python-dotenv/blob/main/LICENSE)
+* pytz [MIT License](https://github.com/newvem/pytz/blob/master/LICENSE.txt)
+* scikit-learn [BSD-3 Clause "New"](https://github.com/scikit-learn/scikit-learn/blob/main/COPYING)
+* scipy[BSD-3 Clause "New"](https://github.com/scipy/scipy/blob/main/LICENSE.txt)
+* seaborn [BSD-3 Clause "New"](https://github.com/mwaskom/seaborn/blob/master/LICENSE.md)
+* statsmodels [BSD-3 Clause "New"](https://github.com/statsmodels/statsmodels/blob/main/LICENSE.txt)
+* tqdm [Mozilla Public License v 2.0](https://github.com/tqdm/tqdm/blob/master/LICENCE)
+
 
 ## Set up instructions
 
@@ -59,13 +73,12 @@ This project requires the following [compute environments](https://docs.dominoda
 ***Dockerfile instructions***
 ```
 RUN pip install --user autogluon==1.1.1 \
-	lightgbm==4.3.0 \
 	matplotlib==3.7.1 \
 	numpy==1.26.4 \
 	pandas==2.2.2 \
 	python-dotenv==1.0.1 \
 	pytz==2023.3 \
-	scikit-lear==1.4.0 \
+	scikit-learn==1.4.0 \
 	scipy==1.12.0 \
 	seaborn==0.12.1 \
 	statsmodels==0.13.2 \

@@ -1,10 +1,10 @@
 import requests
 
 # API endpoint URL
-api_url = "https://domino.myalcon.com:443/models/66847885f1d8ec68cda71153/latest/model"
+api_url = "https://cloud-dogfood.domino.tech:443/models/66ac04bc0346a53492aebbcf/latest/model" # change this to where you have deployed your model
 
 # Authentication credentials
-auth_token = "Ss8h8qpSVEGfvW2HWRVS3wA54RCThjAcuLydllJfVZjaCwAZqJx4Zi7RfkrFKeWA"
+auth_token = "t8gJ89pAEi8YmPxu65v8TEMaYN0N4pv4uyhJorVCO0xoB4syxAGVm7C5jyKexXxv" # get this after deploying your model and store it in an env var or .env file using dotenv
 
 # Example input data
 input_data = [
@@ -22,7 +22,7 @@ input_data = [
 
 # Optional: specify a model name
 # Set to None if you want to use all models
-model_name = "Atlantis_IrisInnovations"
+model_name = "Narnia_OptiGlimpse"
 
 # Prepare the JSON payload
 payload = {
@@ -82,8 +82,8 @@ else:
 if response.status_code == 200:
     result = response.json()
     if 'result' in result and isinstance(result['result'], list):
-        # Access predictions for a specific model (e.g., 'Atlantis_IrisInnovations')
-        target_model = 'Atlantis_IrisInnovations'
+        # Access predictions for a specific model (e.g., 'Narnia_OptiGlimpse')
+        target_model = 'Narnia_OptiGlimpse'
         for model_prediction in result['result']:
             if model_prediction['model_name'] == target_model:
                 print(f"\nPredictions for {target_model}:")

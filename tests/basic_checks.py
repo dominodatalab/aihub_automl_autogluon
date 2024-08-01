@@ -9,11 +9,6 @@ class TestAutoMLAutogluon(unittest.TestCase):
         autogluon_installed = importlib.util.find_spec("autogluon") is not None
         self.assertTrue(autogluon_installed, "autogluon library is not installed")
 
-    def test_library_lightgbm_installed(self):
-        """ Test if lightgbm library is installed """
-        lightgbm_installed = importlib.util.find_spec("lightgbm") is not None
-        self.assertTrue(lightgbm_installed, "lightgbm library is not installed")
-
     def test_library_matplotlib_installed(self):
         """ Test if matplotlib library is installed """
         matplotlib_installed = importlib.util.find_spec("matplotlib") is not None
