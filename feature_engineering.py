@@ -150,7 +150,8 @@ def compute_features(df):
 
 if __name__ == "__main__":
     # Set the series ID for the dataset
-    series_id = "Atlantis_IrisInnovations"
+    # options are [Atlantis_OptiGlimpse,Atlantis_IrisInnovations,Narnia_LensLogic,Narnia_OptiGlimpse,Rivendell_SightSphere]
+    series_id = "Rivendell_SightSphere"
 
     # Load the dataset
     data_path = f'/mnt/code/data/{series_id}.csv'
@@ -182,6 +183,7 @@ if __name__ == "__main__":
     plt.show()
 
     # Save the processed features for further use
-    output_path = f'/mnt/code/data/feature_engineering/{series_id}_processed_features.csv'
+    # output_path = f'/mnt/code/data/feature_engineering/{series_id}_processed_features.csv' # saving to a dataset
+    output_path = f'data/feature_engineering/{series_id}_processed_features.csv' # saving to local folder, make sure the folder exists
     data.to_csv(output_path, index=False)
     print(f"Feature engineering completed and saved to {output_path}.")
