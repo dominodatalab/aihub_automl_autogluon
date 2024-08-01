@@ -1,0 +1,6 @@
+revenue_recognition_date,is_holiday,is_billing_day
+2023-07-15,False,True
+2023-07-16,True,False
+2023-07-17,False,True
+2023-07-18,False,True
+2023-07-19,False,True
