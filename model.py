@@ -212,7 +212,7 @@ if __name__ == "__main__":
 
         # Specific model example
         print("\nPredicting with a specific model (Atlantis_IrisInnovations):")
-        specific_predictions = predict_with_models(single_row_input, model_name="Atlantis_IrisInnovations")
-        write_predictions_to_file(specific_predictions, args.output_dir, "interactive_Atlantis_IrisInnovations")
+        specific_predictions = predict_with_models(single_row_input, model_name="Narnia_OptiGlimpse")
+        write_predictions_to_file(specific_predictions, args.output_dir, "Narnia_OptiGlimpse")
 
     print(f"All predictions have been written to files in {args.output_dir}")
