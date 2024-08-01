@@ -222,7 +222,7 @@ def main():
     Main function to orchestrate the entire process of loading data,
     training/loading a model, and analyzing its performance.
     """
-    series_id = 'Narnia_OptiGlimpse'
+    series_id = 'Narnia_LensLogic'
     # file_path = f'/mnt/code/data/feature_engineering/{series_id}_processed_features.csv' # read from a dataset
     file_path = f'data/feature_engineering/{series_id}_processed_features.csv' # use data in local folder
     df = load_and_prepare_data(file_path)
