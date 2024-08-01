@@ -37,8 +37,8 @@ df = pd.read_csv('data/obfuscated_6_series_2021-2024_billing_and_holidays.csv')
 # Process each unique series_id
 for unique_series_id in df['series_id'].unique():
 
-    # if unique_series_id is not Narnia_OptiGlimpse skip
-    if unique_series_id != 'Narnia_OptiGlimpse':
+    # if unique_series_id is not Narnia_LensLogic skip
+    if unique_series_id != 'Narnia_LensLogic':
         continue
     df_subset = df[df['series_id'] == unique_series_id].copy()
 
@@ -114,7 +114,7 @@ for unique_series_id in df['series_id'].unique():
     print(report)
 
     # Save the report to a file
-    output_report_dir = 'reports'
+    output_report_dir = 'reports/ts_models'
     os.makedirs(output_report_dir, exist_ok=True)
     if not load_model_path:
         with open(os.path.join(output_report_dir, f'{unique_series_id}_fit_summary_report_{current_time}.txt'),
@@ -179,7 +179,7 @@ for unique_series_id in df['series_id'].unique():
     plt.legend()
 
     # Save the plot to a file
-    output_plot_dir = 'plots'
+    output_plot_dir = 'plots/ts_models/'
     os.makedirs(output_plot_dir, exist_ok=True)
     output_file = os.path.join(output_plot_dir, f'{unique_series_id}_{current_time}.png')
     plt.savefig(output_file)
