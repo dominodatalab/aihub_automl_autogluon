@@ -1,0 +1,165 @@
+Best Model: WeightedEnsemble_L3
+Training Time: 0.020371675491333008 seconds
+Validation Score: -218683.05225650215
+
+Model Performance:
+                      model      score_val             eval_metric  pred_time_val    fit_time  pred_time_val_marginal  fit_time_marginal  stack_level  can_infer  fit_order
+        WeightedEnsemble_L3 -218683.052257 root_mean_squared_error       9.785980 1124.830823                0.000333           0.020372            3       True        159
+  NeuralNetTorch_r22_BAG_L2 -224109.388305 root_mean_squared_error       8.946895  976.735503                0.077012          15.277463            2       True        125
+  NeuralNetTorch_r79_BAG_L2 -224286.664033 root_mean_squared_error       8.946550  976.569580                0.076667          15.111540            2       True        120
+        WeightedEnsemble_L2 -224682.551444 root_mean_squared_error       0.430583   87.041215                0.000347           0.020503            2       True        109
+NeuralNetFastAI_r102_BAG_L2 -225602.885165 root_mean_squared_error       9.136894  977.182922                0.267011          15.724883            2       True        129
+NeuralNetFastAI_r156_BAG_L2 -225851.520326 root_mean_squared_error       9.017291  978.527255                0.147408          17.069215            2       True        148
+  NeuralNetTorch_r41_BAG_L2 -226013.217412 root_mean_squared_error       8.934786  974.334062                0.064903          12.876023            2       True        153
+NeuralNetFastAI_r145_BAG_L2 -226554.416994 root_mean_squared_error       8.956156  971.138884                0.086274           9.680845            2       True        133
+  NeuralNetTorch_r30_BAG_L2 -226808.515902 root_mean_squared_error       8.952675  979.966016                0.082792          18.507976            2       True        135
+  NeuralNetTorch_r14_BAG_L2 -227293.891308 root_mean_squared_error       8.941888  971.627678                0.072005          10.169638            2       True        144
+ NeuralNetTorch_r158_BAG_L2 -228371.405458 root_mean_squared_error       8.944650  976.593882                0.074767          15.135842            2       True        156
+     NeuralNetFastAI_BAG_L2 -228577.936713 root_mean_squared_error       8.984102  969.278827                0.114219           7.820788            2       True        115
+          LightGBMXT_BAG_L2 -228619.766151 root_mean_squared_error       8.913740  966.268559                0.043858           4.810519            2       True        110
+NeuralNetFastAI_r191_BAG_L2 -228651.551004 root_mean_squared_error       8.956475  973.173290                0.086592          11.715250            2       True        122
+       LightGBM_r130_BAG_L2 -228732.146718 root_mean_squared_error       8.892093  966.126082                0.022210           4.668042            2       True        136
+NeuralNetFastAI_r103_BAG_L2 -228767.265320 root_mean_squared_error       8.976320  970.723364                0.106437           9.265324            2       True        143
+        CatBoost_r50_BAG_L2 -228859.358748 root_mean_squared_error       8.915379 1010.908472                0.045497          49.450433            2       True        138
+       CatBoost_r137_BAG_L2 -229010.171104 root_mean_squared_error       8.914100  976.075965                0.044217          14.617925            2       True        128
+        CatBoost_r70_BAG_L2 -229132.973253 root_mean_squared_error       8.920301 1025.825878                0.050418          64.367839            2       True        147
+        CatBoost_r13_BAG_L2 -229454.108898 root_mean_squared_error       8.925169 1168.891980                0.055286         207.433940            2       True        130
+        LightGBM_r96_BAG_L2 -229924.046761 root_mean_squared_error       8.905053  965.778150                0.035171           4.320110            2       True        124
+       LightGBM_r196_BAG_L2 -229926.425905 root_mean_squared_error       8.988377  968.147336                0.118494           6.689296            2       True        149
+       CatBoost_r177_BAG_L2 -230192.645666 root_mean_squared_error       8.913846 1101.640759                0.043963         140.182720            2       True        119
+            CatBoost_BAG_L2 -230233.024419 root_mean_squared_error       8.913279 1000.876597                0.043396          39.418557            2       True        113
+       CatBoost_r167_BAG_L2 -230724.530591 root_mean_squared_error       8.919293 1026.635205                0.049411          65.177166            2       True        151
+         CatBoost_r9_BAG_L2 -230747.621056 root_mean_squared_error       8.918841 1188.939886                0.048959         227.481847            2       True        123
+        CatBoost_r86_BAG_L2 -231060.514931 root_mean_squared_error       8.953222 1026.330353                0.083339          64.872313            2       True        157
+ NeuralNetFastAI_r95_BAG_L2 -231307.023183 root_mean_squared_error       8.953826  971.693151                0.083943          10.235111            2       True        152
+      ExtraTrees_r42_BAG_L2 -231326.403180 root_mean_squared_error       8.968463  962.348682                0.098581           0.890642            2       True        127
+         XGBoost_r89_BAG_L2 -231362.384588 root_mean_squared_error       8.949320  972.547442                0.079437          11.089403            2       True        134
+       LightGBM_r188_BAG_L2 -231609.591687 root_mean_squared_error       8.902036  967.207458                0.032153           5.749419            2       True        132
+ NeuralNetFastAI_r11_BAG_L2 -231767.170782 root_mean_squared_error       8.969570  973.375458                0.099688          11.917419            2       True        139
+       ExtraTreesMSE_BAG_L2 -232300.133632 root_mean_squared_error       8.953547  962.546842                0.083665           1.088802            2       True        114
+        CatBoost_r69_BAG_L2 -232325.408155 root_mean_squared_error       8.916526  979.223224                0.046643          17.765184            2       True        142
+NeuralNetFastAI_r143_BAG_L2 -232337.036643 root_mean_squared_error       9.026149  979.365699                0.156266          17.907659            2       True        146
+        LightGBM_r15_BAG_L2 -232564.711268 root_mean_squared_error       8.899529  969.399838                0.029647           7.941798            2       True        155
+     ExtraTrees_r172_BAG_L2 -232649.102330 root_mean_squared_error       8.945377  961.926973                0.075494           0.468934            2       True        141
+             XGBoost_BAG_L2 -232682.642293 root_mean_squared_error       8.948869  979.450412                0.078987          17.992373            2       True        116
+   RandomForest_r195_BAG_L2 -233016.283001 root_mean_squared_error       8.956588  965.264816                0.086705           3.806777            2       True        131
+            LightGBM_BAG_L2 -233137.164524 root_mean_squared_error       8.895893  970.312808                0.026011           8.854769            2       True        111
+       LightGBM_r161_BAG_L2 -233489.464793 root_mean_squared_error       8.919838  974.336553                0.049955          12.878513            2       True        145
+         XGBoost_r33_BAG_L2 -233521.928146 root_mean_squared_error       9.025398 1049.326234                0.155515          87.868194            2       True        126
+    RandomForest_r39_BAG_L2 -234066.549223 root_mean_squared_error       8.948999  964.920628                0.079117           3.462588            2       True        150
+      NeuralNetTorch_BAG_L2 -234197.992582 root_mean_squared_error       8.994238  975.388758                0.124356          13.930718            2       True        117
+     RandomForestMSE_BAG_L2 -234435.390072 root_mean_squared_error       8.954217  966.418102                0.084334           4.960063            2       True        112
+       LightGBM_r131_BAG_L2 -234884.186068 root_mean_squared_error       8.914231  972.737787                0.044348          11.279748            2       True        121
+         XGBoost_r98_BAG_L2 -235132.161157 root_mean_squared_error       9.206966 1055.305131                0.337083          93.847092            2       True        154
+  NeuralNetTorch_r86_BAG_L2 -235576.117792 root_mean_squared_error       8.948292  977.477653                0.078409          16.019614            2       True        137
+        CatBoost_r12_BAG_L1 -236783.307839 root_mean_squared_error       0.020455    6.163448                0.020455           6.163448            1       True         94
+       CatBoost_r167_BAG_L1 -237119.916539 root_mean_squared_error       0.051569    4.707013                0.051569           4.707013            1       True         44
+  NeuralNetTorch_r76_BAG_L1 -237219.541102 root_mean_squared_error       0.062969   13.486837                0.062969          13.486837            1       True         88
+       CatBoost_r177_BAG_L1 -237822.276104 root_mean_squared_error       0.053075    3.877957                0.053075           3.877957            1       True         12
+        CatBoost_r60_BAG_L1 -238123.719504 root_mean_squared_error       0.023896    5.906576                0.023896           5.906576            1       True         78
+       CatBoost_r137_BAG_L1 -238572.493720 root_mean_squared_error       0.022963    4.885366                0.022963           4.885366            1       True         21
+         CatBoost_r5_BAG_L1 -238726.957051 root_mean_squared_error       0.026932   11.799514                0.026932          11.799514            1       True         69
+            CatBoost_BAG_L1 -238779.593676 root_mean_squared_error       0.021461    4.718011                0.021461           4.718011            1       True          6
+       CatBoost_r198_BAG_L1 -238828.638654 root_mean_squared_error       0.020522    4.889542                0.020522           4.889542            1       True        101
+       CatBoost_r143_BAG_L1 -238996.094969 root_mean_squared_error       0.025224    5.752298                0.025224           5.752298            1       True         72
+       LightGBMLarge_BAG_L2 -239006.776097 root_mean_squared_error       8.899872  984.670340                0.029990          23.212301            2       True        118
+  NeuralNetTorch_r79_BAG_L1 -239150.770464 root_mean_squared_error       0.066132   19.601090                0.066132          19.601090            1       True         13
+       CatBoost_r163_BAG_L1 -239455.440223 root_mean_squared_error       0.022189    3.784807                0.022189           3.784807            1       True        100
+        CatBoost_r13_BAG_L1 -239554.302320 root_mean_squared_error       0.022879   17.093181                0.022879          17.093181            1       True         23
+       CatBoost_r180_BAG_L1 -239957.506378 root_mean_squared_error       0.027359    7.988456                0.027359           7.988456            1       True         87
+        XGBoost_r194_BAG_L2 -240034.744742 root_mean_squared_error       9.149642  984.722901                0.279759          23.264862            2       True        140
+ NeuralNetTorch_r135_BAG_L1 -240188.652458 root_mean_squared_error       0.069323   20.956496                0.069323          20.956496            1       True         95
+        CatBoost_r70_BAG_L1 -240330.456373 root_mean_squared_error       0.023196    6.087080                0.023196           6.087080            1       True         40
+NeuralNetFastAI_r145_BAG_L1 -240658.371170 root_mean_squared_error       0.086172    9.520618                0.086172           9.520618            1       True         26
+         CatBoost_r9_BAG_L1 -240742.605837 root_mean_squared_error       0.026461   11.905319                0.026461          11.905319            1       True         16
+        CatBoost_r49_BAG_L1 -240948.273081 root_mean_squared_error       0.022631    4.094858                0.022631           4.094858            1       True         53
+  NeuralNetTorch_r31_BAG_L1 -241053.793324 root_mean_squared_error       0.098114   15.395218                0.098114          15.395218            1       True         63
+        CatBoost_r86_BAG_L1 -241146.835126 root_mean_squared_error       0.022440    8.706974                0.022440           8.706974            1       True         50
+        CatBoost_r69_BAG_L1 -241318.924306 root_mean_squared_error       0.021086    4.465687                0.021086           4.465687            1       True         35
+       CatBoost_r128_BAG_L1 -241333.621734 root_mean_squared_error       0.024935   11.130452                0.024935          11.130452            1       True         61
+NeuralNetFastAI_r187_BAG_L1 -241434.155591 root_mean_squared_error       0.122511   19.907684                0.122511          19.907684            1       True        102
+  NeuralNetTorch_r41_BAG_L1 -242078.702750 root_mean_squared_error       0.065522   16.256397                0.065522          16.256397            1       True         46
+NeuralNetFastAI_r138_BAG_L1 -242221.214260 root_mean_squared_error       0.151464   14.807185                0.151464          14.807185            1       True         84
+  NeuralNetTorch_r30_BAG_L1 -242618.230635 root_mean_squared_error       0.074253   24.839035                0.074253          24.839035            1       True         28
+ NeuralNetTorch_r158_BAG_L1 -242717.266445 root_mean_squared_error       0.067065   19.849387                0.067065          19.849387            1       True         49
+NeuralNetFastAI_r100_BAG_L1 -242801.355159 root_mean_squared_error       0.192799   25.821910                0.192799          25.821910            1       True         99
+  NeuralNetTorch_r19_BAG_L1 -243028.110716 root_mean_squared_error       0.066129   10.565010                0.066129          10.565010            1       True        103
+   NeuralNetTorch_r1_BAG_L1 -243074.454267 root_mean_squared_error       0.082609   17.160543                0.082609          17.160543            1       True        107
+ NeuralNetFastAI_r95_BAG_L1 -243221.276380 root_mean_squared_error       0.090891    9.876950                0.090891           9.876950            1       True         45
+NeuralNetFastAI_r191_BAG_L1 -243991.632468 root_mean_squared_error       0.086940   10.362867                0.086940          10.362867            1       True         15
+  NeuralNetTorch_r22_BAG_L1 -244598.310532 root_mean_squared_error       0.092610   18.329129                0.092610          18.329129            1       True         18
+ NeuralNetFastAI_r69_BAG_L1 -244682.056824 root_mean_squared_error       0.105037    8.989187                0.105037           8.989187            1       True         82
+  NeuralNetTorch_r71_BAG_L1 -244750.038245 root_mean_squared_error       0.063575   10.783633                0.063575          10.783633            1       True         71
+        CatBoost_r50_BAG_L1 -245148.488321 root_mean_squared_error       0.023662    3.999825                0.023662           3.999825            1       True         31
+ NeuralNetTorch_r121_BAG_L1 -245283.719873 root_mean_squared_error       0.090489   24.043287                0.090489          24.043287            1       True         90
+         CatBoost_r6_BAG_L1 -245883.158618 root_mean_squared_error       0.031318    4.313617                0.031318           4.313617            1       True         83
+  NeuralNetTorch_r89_BAG_L1 -245992.553226 root_mean_squared_error       0.071074   15.352270                0.071074          15.352270            1       True        108
+NeuralNetFastAI_r103_BAG_L1 -245994.384853 root_mean_squared_error       0.129681    8.939697                0.129681           8.939697            1       True         36
+         XGBoost_r98_BAG_L1 -246439.384824 root_mean_squared_error       0.143102    7.823573                0.143102           7.823573            1       True         47
+     NeuralNetFastAI_BAG_L1 -246701.674556 root_mean_squared_error       0.089081    7.253302                0.089081           7.253302            1       True          8
+NeuralNetFastAI_r194_BAG_L1 -246731.995485 root_mean_squared_error       0.090896    7.552437                0.090896           7.552437            1       True         93
+         XGBoost_r89_BAG_L1 -246863.169781 root_mean_squared_error       0.089999    3.879259                0.089999           3.879259            1       True         27
+        LightGBM_r30_BAG_L1 -247503.063688 root_mean_squared_error       0.205226    4.944600                0.205226           4.944600            1       True         67
+       LightGBM_r188_BAG_L1 -247711.359808 root_mean_squared_error       0.034107    3.743533                0.034107           3.743533            1       True         25
+       LightGBM_r196_BAG_L1 -247828.955466 root_mean_squared_error       0.383364    6.542126                0.383364           6.542126            1       True         42
+       LightGBM_r161_BAG_L1 -248320.577791 root_mean_squared_error       0.054724    4.056880                0.054724           4.056880            1       True         38
+NeuralNetFastAI_r156_BAG_L1 -248418.313328 root_mean_squared_error       0.117388   18.560201                0.117388          18.560201            1       True         41
+ NeuralNetTorch_r185_BAG_L1 -248631.869170 root_mean_squared_error       0.119620   21.528074                0.119620          21.528074            1       True         76
+       LightGBM_r121_BAG_L1 -248649.642574 root_mean_squared_error       0.077487    4.782893                0.077487           4.782893            1       True         85
+NeuralNetFastAI_r134_BAG_L1 -248672.980665 root_mean_squared_error       0.144358   26.306223                0.144358          26.306223            1       True         57
+       LightGBM_r131_BAG_L1 -248761.947295 root_mean_squared_error       0.069593    4.101145                0.069593           4.101145            1       True         14
+      NeuralNetTorch_BAG_L1 -248979.814302 root_mean_squared_error       0.073130   16.843723                0.073130          16.843723            1       True         10
+         XGBoost_r31_BAG_L1 -249099.247100 root_mean_squared_error       0.148290   11.214624                0.148290          11.214624            1       True         75
+         XGBoost_r22_BAG_L1 -249126.878652 root_mean_squared_error       0.112590    4.824756                0.112590           4.824756            1       True         81
+         XGBoost_r34_BAG_L1 -249467.099577 root_mean_squared_error       0.119612    5.584414                0.119612           5.584414            1       True        105
+   RandomForest_r166_BAG_L1 -249479.593584 root_mean_squared_error       0.075255    1.032326                0.075255           1.032326            1       True         74
+       LightGBM_r130_BAG_L1 -250035.120413 root_mean_squared_error       0.060212    3.570182                0.060212           3.570182            1       True         29
+       ExtraTreesMSE_BAG_L1 -250085.768368 root_mean_squared_error       0.070104    0.385478                0.070104           0.385478            1       True          7
+     ExtraTrees_r197_BAG_L1 -250085.768368 root_mean_squared_error       0.070527    0.991433                0.070527           0.991433            1       True         89
+ NeuralNetTorch_r143_BAG_L1 -250155.655335 root_mean_squared_error       0.074779   24.574481                0.074779          24.574481            1       True         60
+      ExtraTrees_r42_BAG_L1 -250426.737653 root_mean_squared_error       0.070443    0.372037                0.070443           0.372037            1       True         20
+        LightGBM_r42_BAG_L1 -250445.221130 root_mean_squared_error       0.048133    3.720956                0.048133           3.720956            1       True        106
+    RandomForest_r39_BAG_L1 -250458.144946 root_mean_squared_error       0.067081    0.743891                0.067081           0.743891            1       True         43
+        LightGBM_r94_BAG_L1 -250542.873641 root_mean_squared_error       0.096594    4.053267                0.096594           4.053267            1       True         59
+          LightGBMXT_BAG_L1 -250576.663152 root_mean_squared_error       0.040902    3.420456                0.040902           3.420456            1       True          3
+NeuralNetFastAI_r102_BAG_L1 -250697.830825 root_mean_squared_error       0.132157   14.881100                0.132157          14.881100            1       True         22
+  NeuralNetTorch_r86_BAG_L1 -251009.445769 root_mean_squared_error       0.091579   15.257899                0.091579          15.257899            1       True         30
+        LightGBM_r15_BAG_L1 -251037.851267 root_mean_squared_error       0.035521    3.582935                0.035521           3.582935            1       True         48
+    RandomForest_r15_BAG_L1 -251097.527879 root_mean_squared_error       0.074364    0.971768                0.074364           0.971768            1       True         79
+       LightGBM_r135_BAG_L1 -251181.459749 root_mean_squared_error       0.077700    4.386489                0.077700           4.386489            1       True         80
+     ExtraTrees_r172_BAG_L1 -251522.826056 root_mean_squared_error       0.064421    0.324721                0.064421           0.324721            1       True         34
+  NeuralNetTorch_r14_BAG_L1 -251707.688021 root_mean_squared_error       0.062227   11.985578                0.062227          11.985578            1       True         37
+         XGBoost_r49_BAG_L1 -251732.562903 root_mean_squared_error       0.086150    5.102256                0.086150           5.102256            1       True         68
+         XGBoost_r33_BAG_L1 -251767.661043 root_mean_squared_error       0.130085    7.926562                0.130085           7.926562            1       True         19
+        LightGBM_r96_BAG_L1 -251817.532350 root_mean_squared_error       0.264414    4.919756                0.264414           4.919756            1       True         17
+       LightGBM_r143_BAG_L1 -252186.564533 root_mean_squared_error       0.064326    3.998147                0.064326           3.998147            1       True         55
+        XGBoost_r194_BAG_L1 -252437.532793 root_mean_squared_error       0.141831    3.846741                0.141831           3.846741            1       True         33
+         XGBoost_r95_BAG_L1 -252484.646343 root_mean_squared_error       0.069228    4.138980                0.069228           4.138980            1       True        104
+   RandomForest_r195_BAG_L1 -252645.656461 root_mean_squared_error       0.074876    0.906730                0.074876           0.906730            1       True         24
+       LightGBMLarge_BAG_L1 -252755.436155 root_mean_squared_error       0.032919    4.215169                0.032919           4.215169            1       True         11
+ NeuralNetFastAI_r11_BAG_L1 -252874.200690 root_mean_squared_error       0.106211   10.944006                0.106211          10.944006            1       True         32
+            LightGBM_BAG_L1 -253183.183859 root_mean_squared_error       0.028304    3.565538                0.028304           3.565538            1       True          4
+NeuralNetFastAI_r127_BAG_L1 -253457.408411 root_mean_squared_error       0.160908   13.778547                0.160908          13.778547            1       True         91
+             XGBoost_BAG_L1 -254065.608953 root_mean_squared_error       0.086965    4.144143                0.086965           4.144143            1       True          9
+     ExtraTrees_r178_BAG_L1 -254342.836423 root_mean_squared_error       0.063381    0.845316                0.063381           0.845316            1       True         73
+      ExtraTrees_r49_BAG_L1 -254785.533792 root_mean_squared_error       0.070849    0.717728                0.070849           0.717728            1       True         54
+   RandomForest_r127_BAG_L1 -255718.545591 root_mean_squared_error       0.063345    0.920609                0.063345           0.920609            1       True         56
+ NeuralNetTorch_r197_BAG_L1 -256108.925452 root_mean_squared_error       0.091228   10.302847                0.091228          10.302847            1       True         52
+  NeuralNetTorch_r87_BAG_L1 -257732.354714 root_mean_squared_error       0.111251   29.402117                0.111251          29.402117            1       True         70
+    RandomForest_r16_BAG_L1 -257793.683280 root_mean_squared_error       0.071226    1.133692                0.071226           1.133692            1       True         92
+     RandomForestMSE_BAG_L1 -257793.683280 root_mean_squared_error       0.071604    0.558837                0.071604           0.558837            1       True          5
+ NeuralNetFastAI_r65_BAG_L1 -257812.701272 root_mean_squared_error       0.195065   20.070687                0.195065          20.070687            1       True         65
+  NeuralNetFastAI_r4_BAG_L1 -259484.437839 root_mean_squared_error       0.112898    7.738530                0.112898           7.738530            1       True         96
+  NeuralNetTorch_r36_BAG_L1 -259757.878355 root_mean_squared_error       0.069493   16.331161                0.069493          16.331161            1       True         98
+     ExtraTrees_r126_BAG_L1 -260791.223513 root_mean_squared_error       0.065188    0.783361                0.065188           0.783361            1       True         97
+NeuralNetFastAI_r160_BAG_L1 -261957.775698 root_mean_squared_error       0.166274    9.769710                0.166274           9.769710            1       True         77
+ NeuralNetFastAI_r37_BAG_L1 -264364.094438 root_mean_squared_error       0.084248    7.791198                0.084248           7.791198            1       True         51
+NeuralNetFastAI_r111_BAG_L1 -265223.521506 root_mean_squared_error       0.137113   14.151146                0.137113          14.151146            1       True         62
+ NeuralNetFastAI_r88_BAG_L1 -268246.375711 root_mean_squared_error       0.129719   20.933212                0.129719          20.933212            1       True         66
+NeuralNetFastAI_r143_BAG_L1 -271228.994662 root_mean_squared_error       0.131658   19.243031                0.131658          19.243031            1       True         39
+       ExtraTrees_r4_BAG_L1 -271271.788962 root_mean_squared_error       0.062211    0.355826                0.062211           0.355826            1       True         64
+NeuralNetFastAI_r172_BAG_L1 -272413.884072 root_mean_squared_error       0.082546    7.642061                0.082546           7.642061            1       True         86
+    RandomForest_r34_BAG_L1 -279509.545506 root_mean_squared_error       0.064730    0.361592                0.064730           0.361592            1       True         58
+ NeuralNetFastAI_r37_BAG_L2 -358076.449747 root_mean_squared_error       9.033924  968.635490                0.164041           7.177450            2       True        158
+      KNeighborsDist_BAG_L1 -559769.506150 root_mean_squared_error       0.012104    0.003167                0.012104           0.003167            1       True          2
+      KNeighborsUnif_BAG_L1 -602765.513420 root_mean_squared_error       0.013359    0.004468                0.013359           0.004468            1       True          1
