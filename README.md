@@ -1,10 +1,10 @@
 # Sales forecasting
 
 ## About this project
-This project shows how to use [Autogluon](https://auto.gluon.ai/stable/index.html) to build time series models using both time series and regression models. This repository also has code to build SARIMA, TFT, [FLAML](https://microsoft.github.io/FLAML/) models. The Autogluon experiments resulted in better models (RMSE) than DataRobot models so we decided to deploy the Autogluon models without exploring the other frameworks further.
+This project shows how to use [Autogluon](https://auto.gluon.ai/stable/index.html) to build regression models to make sales forecasts. The dataset that was used contains data for 5 different SKUs and a model was built for each of the SKU's. Typically for such use cases time series models are applied but based on prior experiments on this dataset, converting the problem to a regression problem and applying regression models gave better results.
 
 The assets available in this project are:
-*alcon_sales_forecast/AutogluonModels/regression/* - the folders here have the models that were built using Autogluon with additional features from the feature engineering phase. Given the size, the `Atlantis_IrisInnovations` model is not in the repo but all the models are available at `/mnt/data/*` and at `/mnt/artifacts/*` in the [IP_forecasting_autoML](https://domino.myalcon.com/u/mansusu1/IP_forecasting_autoML/overview) project.
+*/AutogluonModels/regression/* - the folders here have the models that were built using Autogluon with additional features from the feature engineering phase. Given the size, the `Atlantis_IrisInnovations` model is not in the repo.
 
 *data/feature_engineering/* - the files in this folder are the final files that contain all the original and derived features for the different `series_id`; these files can be used to build the models
 
@@ -27,8 +27,6 @@ The assets available in this project are:
 *plots/autogluon_no_feature_engineering* - this folder has some sample forecasts from the `Autogluon` models that were build using time series models and without any derived features. 
 
 *reports/* - this folder has the training results of the models that were built using AutoGluon regression models using the original and the derived features. These models are the ones that are deployed and that performed better than DataRobot's models
-
-*sarima_tft_flaml/* - this folder contains the code to build SARIMA, TFT(TemporalFusionTransformer) and FLAML models. These were used for initial experiments and are not used in the final deployment
 
 *autogluon_forecast_no_feature_eng.py* - This file has code to build Autogluon time series models only using the data that was supplied, it does not use and derived features and hence the performance is not as good as the the Autogluon regression models
 
