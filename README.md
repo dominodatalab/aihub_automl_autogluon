@@ -44,7 +44,7 @@ The assets available in this project are:
 
 *invoke_model.py* - This file contains code to call the model API to get predictions
 
-*model.py* - This file contains code to deploy the built models as a model API. It can also be used to call a job. The `predict_with_models` functions it the function that gets called from the model API and the arguments specified in `parser` in the `if __name__ == "__main__":` predicate are used to run the job. Note, in order to run this as a job the `--is_job` must be specified as a CLI argument 
+*model.py* - This file contains code to deploy the built models as a model API. It can also be used to call a job. The `predict_with_models` is the function that gets called from the model API and the arguments specified in `parser` in the `if __name__ == "__main__":` predicate are used to run the job. Note, in order to run this as a job the `--is_job` must be specified as a CLI argument 
 
 ## License
 This template is licensed under Apache 2.0 and contains the following components: 
