@@ -1,7 +1,7 @@
 # Sales forecasting
 
 ## About this project
-This project shows how to use [Autogluon](https://auto.gluon.ai/stable/index.html) to build regression models to make sales forecasts. The dataset that was used contains data for 5 different SKUs and a model was built for each of the SKU's. Typically for such use cases time series models are applied but based on prior experiments on this dataset, converting the problem to a regression problem and applying regression models gave better results.
+This project shows how to use [Autogluon](https://auto.gluon.ai/stable/index.html) to build time series and regression models to make sales forecasts. The dataset that was used contains data for 5 different SKUs and a model was built for each of the SKU's. 
 
 The assets available in this project are:
 */AutogluonModels/regression/* - the folders here have the models that were built using Autogluon with additional features from the feature engineering phase. Given the size, the `Atlantis_IrisInnovations` model is not in the repo.
