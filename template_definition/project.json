@@ -40,7 +40,7 @@
     "recommended": false,
     "prerequisites": [
       {
-        "value": "To use this project, create an environment based off an image that has PyTorch and the CUDA drivers from Nvidia's container register and by subsequently adding Dockerfile instructions to install the libraries required for fine tuning.",
+        "value": "To use this project, create an environment based off a DSE that has Python 3.9 and by subsequently adding Dockerfile instructions to install the libraries required for building the models.",
         "link": "https://github.com/dominodatalab/aihub_automl_autogluon?tab=readme-ov-file#environment-requirements"
       }
     ],
