@@ -79,7 +79,7 @@ def train_model(train_data, label, series_id):
     """
     current_time = datetime.now().strftime("%Y%m%d_%H%M")
     predictor = TabularPredictor(label=label, eval_metric='root_mean_squared_error',
-                                 path=f'/mnt/artifacts/{series_id}/')
+                                 path=f'/mnt/artifacts/{series_id}/') # change this to where you want to save the model
     train_data_ag = TabularDataset(train_data)
     predictor.fit(train_data=train_data_ag, presets='best_quality',
                   num_cpus=6, feature_prune_kwargs={'force_prune': True}) # change num_cpus according to the hardware you have available
