@@ -80,14 +80,14 @@ def decompose_time_series(sales_data, period):
 
 
 def main():
-    file_path = 'data/IrisInnovations.csv'
+    file_path = 'data/Atlantis_IrisInnovations.csv'
     n_days = 365
     title = f'Total Sales for IrisInnovations in the last {n_days} days'
 
     # Load the data
     last_n_days_data = load_data(file_path, n_days)
 
-    # Plot the time series data
+    # Plot the time series data (modify to save to a file in case you are running this in an IDE in the browser)
     plot_time_series(last_n_days_data, title)
 
     # Extract the sales data

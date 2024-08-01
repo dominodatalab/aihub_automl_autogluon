@@ -7,8 +7,8 @@ data = pd.read_csv(file_path)
 # Display the first few rows of the dataset to understand its structure
 print(data.head())
 
-# Subset the data for the product "IrisInnovations"
-product_name = "Narnia_LensLogic"  # Change this to the product name you want to subset
+# Subset the data for the product corresponding to the series_id options are [Narnia_OptiGlimpse,Narnia_LensLogic,Atlantis_IrisInnovations,Atlantis_IrisInnovations,Atlantis_IrisInnovations]
+product_name = "Narnia_OptiGlimpse"  # Change this to the product name you want to subset
 subset_data = data[data['series_id'] == product_name]
 
 # Display the first few rows of the subset data to verify
