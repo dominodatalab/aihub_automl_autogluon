@@ -1,7 +1,7 @@
 # Sales forecasting
 
 ## About this project
-This project shows how to use [Autogluon](https://auto.gluon.ai/stable/index.html) to build time series and regression models to make sales forecasts. The dataset that was used contains data for 5 different SKUs and a model was built for each of the SKU's. 
+This project shows how to use [Autogluon](https://auto.gluon.ai/stable/index.html) to build time series and regression models to make sales forecasts. The dataset that was used contains data for 5 different SKUs and a model was built for each of the SKU's.  In this project we will deploy the regression models as an API. In order to build the regression models the first time, the order to run the scripts would be `create_series_subset.py` -> `feature_engineering.py` -> `autogluon_regression.py` . For the time series models the `series_id` for which the models need to be built can be specified in the `autogluon_forecast_ts.py` file . Please take care to make sure the file paths and folders are correct before executing the code.
 
 The assets available in this project are:
 */AutogluonModels/regression/* - the folders here have the models that were built using Autogluon with additional features from the feature engineering phase. Given the size, the `Atlantis_IrisInnovations` model is not in the repo.
@@ -24,7 +24,7 @@ The assets available in this project are:
 
 *data/prediction_samples* - this folder has examples of data that be used for the job to get predictions
 
-*plots/autogluon_no_feature_engineering* - this folder has some sample forecasts from the `Autogluon` models that were build using time series models and without any derived features. 
+*plots/autogluon_ts* - this folder has some sample forecasts from the `Autogluon` models that were build using time series models and without any derived features. 
 
 *reports/* - this folder has the training results of the models that were built using AutoGluon regression models using the original and the derived features. These models are the ones that are deployed and that performed better than DataRobot's models
 
