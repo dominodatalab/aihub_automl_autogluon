@@ -37,8 +37,8 @@ df = pd.read_csv('data/obfuscated_6_series_2021-2024_billing_and_holidays.csv')
 # Process each unique series_id
 for unique_series_id in df['series_id'].unique():
 
-    # if unique_series_id is not Atlantis_OptiGlimpse skip
-    if unique_series_id != 'Narnia_LensLogic':
+    # if unique_series_id is not Narnia_OptiGlimpse skip
+    if unique_series_id != 'Narnia_OptiGlimpse':
         continue
     df_subset = df[df['series_id'] == unique_series_id].copy()
 
@@ -95,6 +95,7 @@ for unique_series_id in df['series_id'].unique():
                           "ETS": {},
                           "AutoARIMA": {},
                           "TemporalFusionTransformer": {},
+                          # eg of running non default HPO below
                           # "TemporalFusionTransformer": [
                           #     {"context_length": space.Int(8, 64)},
                           #     {"num_heads": space.Int(4, 8)},

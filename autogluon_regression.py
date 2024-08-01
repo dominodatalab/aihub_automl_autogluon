@@ -82,7 +82,7 @@ def train_model(train_data, label, series_id):
                                  path=f'/mnt/artifacts/{series_id}/')
     train_data_ag = TabularDataset(train_data)
     predictor.fit(train_data=train_data_ag, presets='best_quality',
-                  num_cpus=6, feature_prune_kwargs={'force_prune': True})
+                  num_cpus=6, feature_prune_kwargs={'force_prune': True}) # change num_cpus according to the hardware you have available
     return predictor, current_time
 
 def save_report(report, series_id, current_time):
@@ -223,7 +223,8 @@ def main():
     training/loading a model, and analyzing its performance.
     """
     series_id = 'Narnia_OptiGlimpse'
-    file_path = f'/mnt/code/data/feature_engineering/{series_id}_processed_features.csv'
+    # file_path = f'/mnt/code/data/feature_engineering/{series_id}_processed_features.csv' # read from a dataset
+    file_path = f'data/feature_engineering/{series_id}_processed_features.csv' # use data in local folder
     df = load_and_prepare_data(file_path)
     label = 'day_sales_usd'
     load_model_path = None
@@ -235,8 +236,11 @@ def main():
         train_data, evaluation_data = split_data(df, columns_to_drop=columns_to_drop)
         
         current_datetime = datetime.now().strftime("%Y%m%d_%H%M")
-        train_file_name = f"/mnt/code/data/train_test/train_data_{series_id}_{current_datetime}.csv"
-        evaluation_file_name = f"/mnt/code/data/train_test/evaluation_data_{series_id}_{current_datetime}.csv"
+        # Make sure the train_test folder exists at the location where the file is going to be saved
+        # train_file_name = f"/mnt/code/data/train_test/train_data_{series_id}_{current_datetime}.csv" # dataset location to save the training data
+        train_file_name = f"data/train_test/train_data_{series_id}_{current_datetime}.csv" # save training data to local file
+        # evaluation_file_name = f"/mnt/code/data/train_test/evaluation_data_{series_id}_{current_datetime}.csv" #dataset location to save the evaluation data
+        evaluation_file_name = f"data/train_test/evaluation_data_{series_id}_{current_datetime}.csv" # save evaluation data to local file
         
         # Save the training and evaluation data
         train_data.to_csv(train_file_name, index=False)
@@ -249,7 +253,7 @@ def main():
     else:
         # Load an existing model and analyze its performance
         predictor = load_model(load_model_path)
-        model_analysis(predictor, "data/train_test/train_data_Atlantis_OptiGlimpse_20240618_2119.csv",
+        model_analysis(predictor, "data/train_test/train_data_Atlantis_OptiGlimpse_20240618_2119.csv", #change these paths and file names to where your train_test dataset resides
                        "data/train_test/evaluation_data_Atlantis_OptiGlimpse_20240618_2119.csv", df, forecast_periods=14)
 
 if __name__ == "__main__":
