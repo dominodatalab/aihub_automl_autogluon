@@ -61,8 +61,11 @@ def write_predictions_to_file(predictions: List[Dict[str, Any]], output_dir: str
 
 # Define the paths and names for the 5 models
 MODELS = {
-    "Narnia_LensLogic": "/mnt/artifacts/Narnia_LensLogic",
-    "Narnia_OptiGlimpse": "/mnt/artifacts/Narnia_OptiGlimpse",
+    "Narnia_LensLogic": "/mnt/code/AutogluonModels/Narnia_LensLogic",
+    "Narnia_OptiGlimpse": "/mnt/code/AutogluonModels/Narnia_OptiGlimpse",
+    # Recommended to store large files in artifacts
+    # "Narnia_LensLogic": "/mnt/artifacts/Narnia_LensLogic",
+    # "Narnia_OptiGlimpse": "/mnt/artifacts/Narnia_OptiGlimpse",
     # "Atlantis_IrisInnovations": "/mnt/artifacts/Atlantis_IrisInnovations",
     # "Atlantis_OptiGlimpse": "/mnt/artifacts/Atlantis_OptiGlimpse",
     # "Rivendell_SightSphere": "/mnt/artifacts/Rivendell_SightSphere"
