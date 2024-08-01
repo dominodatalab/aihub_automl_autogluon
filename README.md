@@ -58,25 +58,17 @@ This project requires the following [compute environments](https://docs.dominoda
 
 ***Dockerfile instructions***
 ```
-RUN pip install FLAML==2.1.2 \
-	autogluon==1.1.1 \
+RUN pip install --user autogluon==1.1.1 \
 	lightgbm==4.3.0 \
-	lightning==2.2.5 \
-	lightning-utilities==0.8.0 \
-	matplotlib \
-	numba \
+	matplotlib==3.7.1 \
 	numpy==1.26.4 \
-	pandas \
+	pandas==2.2.2 \
 	python-dotenv==1.0.1 \
-	pytorch-forecasting \
-	pytorch-lightning \
-	pytorch_optimizer==2.12.0 \
 	pytz==2023.3 \
-	scikit-learn \
-	scipy \
-	seaborn \
-	statsmodels \
-	torch \
+	scikit-lear==1.4.0 \
+	scipy==1.12.0 \
+	seaborn==0.12.1 \
+	statsmodels==0.13.2 \
 	tqdm==4.66.4
 ```
 
