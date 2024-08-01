@@ -13,7 +13,7 @@
       "uri": "https://github.com/dominodatalab/aihub_automl_autogluon.git",
       "ref": {
         "type": "commitId",
-        "value": "51cbac6"
+        "value": "3be783d"
       },
       "serviceProvider": "github"
     },
