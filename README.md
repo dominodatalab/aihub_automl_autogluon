@@ -1,7 +1,7 @@
 # Sales forecasting
 
 ## About this project
-This project shows how to use [Autogluon](https://auto.gluon.ai/stable/index.html) to build time series and regression models to make sales forecasts. The dataset that was used contains data for 5 different SKUs (`series_id`) and a separate model was built for the SKU's in the dataset. For the purpose of demonstration we will build and deploy the models for the `Narnia_OptiGlimpse` and `Narnia_LensLogic` SKUs in the dataset.
+This project shows how to use [Autogluon](https://auto.gluon.ai/stable/index.html) to build time series and regression models to make sales forecasts. The dataset that was used contains data for 5 different SKUs (`series_id`) and a separate model was built for the SKU's in the dataset to forecast `day_sales_usd`. For the purpose of demonstration we will build and deploy the models for the `Narnia_OptiGlimpse` and `Narnia_LensLogic` SKUs in the dataset.
 
 Additionally, in this project we will deploy the regression models as an API and also allow users to get the models as a job. In order to build the regression models the first time, the order to run the scripts would be `create_series_subset.py` -> `feature_engineering.py` -> `autogluon_regression.py`. For the time series models the `series_id` for which the models need to be built can be specified in the `autogluon_forecast_ts.py` file . Please take care to make sure the file paths and folders are correct before executing the code.
 
