@@ -1,0 +1,11 @@
+Best Model: WeightedEnsemble
+Training Time: 0.2345583438873291 seconds
+Validation Score: -0.3548285549277907
+
+Model Performance:
+                    model  score_val  pred_time_val  fit_time_marginal  fit_order
+         WeightedEnsemble  -0.354829       0.015282           0.234558          5
+TemporalFusionTransformer  -0.354829       0.015282         199.044552          3
+                   DeepAR  -0.446594       0.036244          64.226151          4
+                      ETS  -0.499921      27.898743           0.013314          1
+                AutoARIMA  -0.556727      19.467695           0.029246          2
